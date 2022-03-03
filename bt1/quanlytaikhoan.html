@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>quanlytaikhoan</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        
+  </head>
+
+  <style>
+    .header {
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        }
+
+    .nav{
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: bold;
+        border:none;
+
+    }
+
+    .nav-link{
+        margin-top:8px;
+        color:black
+    }
+
+    .nav-tabs .nav-link{
+        border: none;
+    }
+    
+
+    
+
+    #xinchao{
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(36, 103, 230);
+    }
+
+    .col-form-label{
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 2px;
+    }
+
+    .form-control{
+        background-color: rgb(229, 226, 226);
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    #avata{
+        margin-top:200px;
+    }
+
+
+    
+  </style>
+  <body >
+
+    <div class="header">
+        <nav class="nav justify-content-around nav-tabs">
+            <div id="logoxanh"><img src="./assets/img/logoxanh.png"></div>
+
+            <a class="nav-link" id="datphong-tab" data-toggle="tab" href="#datphong">ĐẶT PHÒNG</a>
+            <a class="nav-link" id="quanlydatphong-tab" data-toggle="tab" href="#quanlydatphong">QUẢN LÝ ĐẶT PHÒNG</a>
+            <a class="nav-link" id="quanlytaikhoan-tab" data-toggle="tab" href="#quanlytaikhoan">QUẢN LÝ TÀI KHOẢN</a>
+            <a class="nav-link" id="muathengay-tab" data-toggle="tab" href="#muathengay">MUA THẺ NGAY</a>
+            <a class="nav-link" id="thecuatoi-tab" data-toggle="tab" href="#thecuatoi">THẺ CỦA TÔI</a>
+            <a class="nav-link" id="quanlyhopdong-tab" data-toggle="tab" href="#quanlyhopdong">QUẢN LÝ HỢP ĐỒNG</a>
+            <div class="nav-link">
+                <button id="xinchao" class="btn dropdown-toggle " data-toggle="dropdown">Xin chào! Bùi Thị Bắc</button>
+                <div class="dropdown-menu">
+                    <a href="" class="dropdown-item">Đăng xuất</a>
+                </div>
+            </div>
+            
+        </nav>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="datphong">
+            </div>
+            <div class="tab-pane fade" id="quanlydatphong">
+            </div>
+            <div class="tab-pane fade show active" id="quanlytaikhoan">
+                <div class="container-fruid container-fruid-background" >
+                    <div class="row">
+                        <div class="col-3">
+                            <a style="margin-top:40px;margin-left:70px;display: inline-block; font-size: 1.5rem;font-weight:bold; " id="quanlythongtin" href="">Quản lý tài khoản</a>
+                        </div>
+                        <div class="col-9">
+                            <div class="div" style="margin-top:20px">
+                                <p style="font-size:12px;font-weight:bold">Trang Chủ > <span style="font-size:12px;font-weight:bold">Quản lý tài khoản</span></p>                            
+                            </div>
+                            <div class="thongtincanhan" style="border-radius: 5px">
+                                <div id="title-thongtincanhan">
+                                    <p style="margin-top:3px" id="title-thongtincanhan-left">Thông tin cá nhân</p>
+                                    <a style="margin-top:3px" id= "title-thongtincanhan-right" href="">Chỉnh sửa</a>
+                                </div>
+                                <hr/>
+                                <div class="container">
+                                    <div class="row" id="rowthongtin">
+                                        <div class="col-3 avata" >
+                                            <input id="avata" type="file" accept=".jpg, .png" multiple />                        
+                                        </div>
+                                        <div class="col-7">
+                                            <form id="formdangki">
+                                                <div class="row mb-3">
+                                                  <label class="col-sm-4 col-form-label">Mã khách hàng:</label>
+                                                  <div class="col-sm-8">
+                                                    <input class="form-control" id="inputmakhachhang">
+                                                  </div>
+                                                  <label class="col-sm-4 col-form-label">Họ và tên:</label>
+                                                  <div class="col-sm-8">
+                                                    <input class="form-control" id="inputhovaten">
+                                                  </div>
+                                                  <label class="col-sm-4 col-form-label">Số điện thoại:</label>
+                                                  <div class="col-sm-8">
+                                                    <input class="form-control" id="inputsodienthoai">
+                                                  </div>
+                                                  <label class="col-sm-4 col-form-label">email:</label>
+                                                  <div class="col-sm-8">
+                                                    <input type="email" class="form-control" id="inputemail">
+                                                  </div>
+                                                </div>
+                                                <hr/>
+                                                <div class="row mb-3">
+                                                  <label class="col-sm-4 col-form-label">CMND/CCCD:</label>
+                                                  <div class="col-sm-8">
+                                                    <input class="form-control" id="inputcmnd">
+                                                  </div>
+                                                  <label class="col-sm-4 col-form-label">Cấp bởi:</label>
+                                                  <div class="col-sm-8">
+                                                    <input class="form-control" id="inputcapboi">
+                                                  </div>
+                                                  <label class="col-sm-4 col-form-label">Ngày cấp:</label>
+                                                  <div class="col-sm-8">
+                                                    <input type="date" class="form-control" id="inputngaycap">
+                                                  </div>
+                                                  <label for="inputPassword3" class="col-sm-4 col-form-label">Password</label>
+                                                  <div class="col-sm-8">
+                                                    <input type="password" class="form-control" id="inputPassword3">
+                                                  </div>
+                                                </div>
+                                                <hr/>
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Ngày sinh:</label>
+                                                    <div class="col-sm-8">
+                                                      <input type="date" class="form-control" id="inputngaysinh">
+                                                    </div>
+                                                    <label class="col-sm-4 col-form-label">Giới tính:</label>
+                                                    <div class="col-sm-8">
+                                                        <select class="form-select form-control" aria-label="Default select example">
+                                                            <option value="1">Nam</option>
+                                                            <option value="2">Nữ</option>
+                                                            <option value="3">Khác</option>
+                                                        </select>
+                                                    </div>
+                                                    <label class="col-sm-4 col-form-label">Quốc gia:</label>
+                                                    <div class="col-sm-8">
+                                                        <select class="form-select form-control" aria-label="Default select example">
+                                                            <option selected>Việt Nam</option>
+                                                            <option value="2">Laos</option>
+                                                            <option value="3">Campodia</option>
+                                                        </select>
+                                                    </div>
+                                                    <label class="col-sm-4 col-form-label">Tỉnh/ TP:</label>
+                                                    <div class="col-sm-8">
+                                                        <select class="form-select form-control" aria-label="Default select example">
+                                                            <option selected>Hồ Chí Minh</option>
+                                                            <option value="2">Đà Nẵng</option>
+                                                            <option value="3">Hà Nội</option>
+                                                        </select>
+                                                    </div>
+                                                    <label class="col-sm-4 col-form-label">Quận/ Huyện:</label>
+                                                    <div class="col-sm-8">
+                                                        <select class="form-select form-control" aria-label="Default select example">
+                                                            <option selected>Ba Đình</option>
+                                                            <option value="2">Long Biên</option>
+                                                            <option value="3">Thanh Xuân</option>
+                                                        </select>
+                                                    </div>
+                                                    <label class="col-sm-4 col-form-label">Hộ khẩu thường trú:</label>
+                                                    <div class="col-sm-8">
+                                                        <input class="form-control" id="inputhokhau">
+                                                    </div>
+                                                    <label class="col-sm-4 col-form-label">Chỗ ở hiện tại:</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" id="inputchoohientai">
+                                                    </div>
+                                                    <label class="col-sm-4 col-form-label">Ngày kích hoat:</label>
+                                                    <div class="col-sm-8">
+                                                      <input type="date" class="form-control" id="inputngaykichhoat">
+                                                    </div>
+                                                  </div>
+                                                
+                                              </form>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="submit" class="doimatkhau">ĐỔI MẬT KHẨU</button>
+                                        </div>
+                                        <div class="abcs">
+
+                                        </div>
+
+                                </div>
+                            </div>
+
+                            
+                            </div>
+                        </div>
+                      </div>
+                </div> 
+
+            </div>
+
+                
+            <div class="tab-pane fade" id="muathengay">
+            </div>
+            <div class="tab-pane fade" id="thecuatoi">
+            </div>
+            <div class="tab-pane fade" id="quanlyhopdong">
+            </div>
+        </div>
+    
+    </div>
+    
+
+
+    <div class="footer" style="bottom:-180px;">
+        <div id="logo"><img src="./assets/img/logo.png"></div>
+        <div>    
+            <p>COPY RIGHT 2021 CRYSTAL BAY GROUP ALL RIGHT RESERVED </p>
+            <p><ins>POWERED BY CRYSTAL TECHNOLOGY</ins><img src="./assets/img/cbtech.png" id ="cbtech"></p>
+        </div>
+        <div class="icon">
+            <img class="fb" src="./assets/img/facebook.png">
+            <img class="yt" src="./assets/img/youtube.png">
+        </div>           
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

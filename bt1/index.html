@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <style>
+        .email{
+            background-image: url(./assets/img/mail.png);
+            background-repeat: no-repeat;
+            background-position: 15px 28px ;
+            background-size: 15px;
+            border-radius: 10px;
+            border: 1px solid gray;
+            padding-left: 50px;
+            padding-top: 20px;
+            font-size: 12px;
+            box-shadow: 1px 1px 0.2px 0.2px #b9b8b8;
+        }
+
+
+        .pass{
+            background-image: url(./assets/img/key.png);
+            background-repeat: no-repeat;
+            background-position: 15px 28px ;
+            background-size: 15px;
+            border-radius: 8px;
+            border: 1px solid gray;
+            padding-left: 50px;
+            padding-top: 20px;
+            font-size: 12px;
+            box-shadow: 1px 1px 0.2px 0.2px #b9b8b8;
+        }
+
+        .titemail{
+            position: absolute;
+            top: 108px;
+            color: rgb(9, 11, 109);
+            z-index: 2000;
+            left: 18px;
+            font-weight: bold;
+            font-size: 10px;
+        }
+
+        .titpass{
+            position: absolute;
+            top: 182px;
+            color: rgb(9, 11, 109);
+            z-index: 2000;
+            left: 18px;
+            font-weight: bold;
+            font-size: 10px;
+            
+        }
+
+      
+
+        #quenmatkhau{
+            font-size: 12px;
+            left:160px;
+            color:white;
+            font-weight: bold;           
+            position: absolute;
+            
+        }
+
+        #quenmatkhau:hover{
+            cursor:pointer;
+        }
+
+        
+
+        #taikhoan{
+            font-size: 12px;
+            left:120px;
+            bottom: 40px;
+            color:white;
+            font-weight: bold;            
+            position: absolute;
+        }
+
+        #taikhoan:hover{
+            cursor:pointer;
+        }
+
+        .icon:hover{
+            cursor:pointer;
+        }
+
+    </style>
+
+    <body>
+        <div class="app">
+            <header class="header">
+                <nav class="header_navbar">
+                    <div class="header_navbar-logo">
+                        
+                    </div>
+                </nav>
+
+            </header>
+            <div class="container">
+                <div class="container__background">
+                    <img class="container__background BG" src="./assets/img/bien.png">
+                    
+                    <div class="container__background logo">
+                        <img src="./assets/img/logo.png">
+                    </div>
+                    <div class="container__background title">
+                        <p>Chào mừng đến với tính năng đặt phòng của</p>
+                    </div>
+                    <div class="container__background name">
+                        <p>CRYSTAL BAY GROUP</p>
+                    </div>
+                    <div class="container__background login">
+
+                        <input type="text" class="container login email " placeholder="Nhập vào địa chỉ email">
+                        <p class="titemail">Email hoặc số điện thoại</p>
+                        <input type="password" class="container login pass" placeholder="Nhập vào mật khẩu">
+                        <p class="titpass">Mật khẩu</p>                        
+                    </div>
+
+                    <div class="container__background but">
+                        <button type="button" class="dangnhap">Đăng Nhập</button>
+                        <div class=""quenmatkhau>
+                            <u id="quenmatkhau"> Quên mật khẩu</u>
+                        </div>                        
+                        <div>
+                            <p id="taikhoan">Bạn chưa có tài khoản?  Đăng ký</p>
+                        </div>
+                        
+                        
+                    </div>
+                    
+
+                </div>
+            </div>
+
+            
+            </div>
+        </div>    
+        <div class="footer">
+        <div id="logo"><img src="./assets/img/logo.png"></div>
+        <div>    
+            <p>COPY RIGHT 2021 CRYSTAL BAY GROUP ALL RIGHT RESERVED </p>
+            <p><ins>POWERED BY CRYSTAL TECHNOLOGY</ins><img src="./assets/img/cbtech.png" id ="cbtech"></p>
+        </div>
+        <div class="icon">
+            <img class="fb" src="./assets/img/facebook.png">
+            <img class="yt" src="./assets/img/youtube.png">
+        </div>           
+        </div>
+    </body>
+</html>
