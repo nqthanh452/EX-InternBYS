@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+
+  <!-- <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <div id="logo"><img src="./assets/img/logo.png"></div>
+        </div>        
+        <div class="col-8">    
+          <p>COPY RIGHT 2021 CRYSTAL BAY GROUP ALL RIGHT RESERVED </p>
+          <p><ins>POWERED BY CRYSTAL TECHNOLOGY</ins><img src="./assets/img/cbtech.png" id ="cbtech"></p>
+        </div>
+        <div class="col-2 icon">
+          <img class="fb" src="./assets/img/facebook.png">
+          <img class="yt" src="./assets/img/youtube.png">
+        </div>      
+      </div>
+      
+    </div> -->
+  <div class="app">
+
+    <div class="header">
+      <div class="nav justify-content-around align-items-center">
+        <div id="logoxanh"><img src="./assets/img/logoxanh.png"></div>
+
+        <a class="nav-link" href="">ĐẶT PHÒNG</a>
+        <a class="nav-link" href="">QUẢN LÝ ĐẶT PHÒNG</a>
+        <a class="nav-link" href="">QUẢN LÝ TÀI KHOẢN</a>
+        <a class="nav-link" href="">MUA THẺ NGAY</a>
+        <a class="nav-link" href="">THẺ CỦA TÔI</a>
+        <a class="nav-link" href="">QUẢN LÝ HỢP ĐỒNG</a>
+        <div class="nav-link">
+          <button id="xinchao" class="btn dropdown-toggle " data-toggle="dropdown">Xin chào! Bùi Thị Bắc</button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2">
+            <div class="sidebar mt-5">
+              <i class="fa-solid fa-user"></i>
+              <a  id="quanlythongtin" href="">Quản lý tài khoản</a>
+            </div>
+          </div>
+          <div class="col-10">
+              <div class="breadcum">
+                  <p >Trang Chủ > <span>Quản lý tài khoản</span></p>                            
+              </div>
+              <div class="thongtincanhan" >
+                  <div id="title-thongtincanhan">
+                      <p  id="title-thongtincanhan-left">Thông tin cá nhân</p>
+                      <a  id= "title-thongtincanhan-right" href="">Chỉnh sửa</a>
+                  </div>
+                  <hr/>
+                  <div class="container">
+                      <div class="row" >
+                          <div class="col-3 avatar"  >
+                            <img id="avatar" src="./assets/img/avatar.png" alt="mô tả cho ảnh" height="200px" width="200px" />
+                          </div>
+                          <div class="col-7">
+                              <form >
+                                  <div class="row mb-3">
+                                    <label class="col-sm-4 col-form-label">Mã khách hàng:</label>
+                                    <div class="col-sm-8">
+                                      <input class="form-control" id="inputmakhachhang">
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">Họ và tên:</label>
+                                    <div class="col-sm-8">
+                                      <input class="form-control" id="inputhovaten">
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">Số điện thoại:</label>
+                                    <div class="col-sm-8">
+                                      <input class="form-control" id="inputsodienthoai">
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">email:</label>
+                                    <div class="col-sm-8">
+                                      <input type="email" class="form-control" id="inputemail">
+                                    </div>
+                                  </div>
+                                  <hr/>
+                                  <div class="row mb-3">
+                                    <label class="col-sm-4 col-form-label">CMND/CCCD:</label>
+                                    <div class="col-sm-8">
+                                      <input class="form-control" id="inputcmnd">
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">Cấp bởi:</label>
+                                    <div class="col-sm-8">
+                                      <input class="form-control" id="inputcapboi">
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">Ngày cấp:</label>
+                                    <div class="col-sm-8">
+                                      <input type="date" class="form-control" id="inputngaycap">
+                                    </div>
+                                    <label for="inputPassword3" class="col-sm-4 col-form-label">Password</label>
+                                    <div class="col-sm-8">
+                                      <input type="password" class="form-control" id="inputPassword3">
+                                    </div>
+                                  </div>
+                                  <hr/>
+                                  <div class="row mb-3">
+                                      <label class="col-sm-4 col-form-label">Ngày sinh:</label>
+                                      <div class="col-sm-8">
+                                        <input type="date" class="form-control" id="inputngaysinh">
+                                      </div>
+                                      <label class="col-sm-4 col-form-label">Giới tính:</label>
+                                      <div class="col-sm-8">
+                                          <select class="form-select form-control" aria-label="Default select example">
+                                              <option value="1">Nam</option>
+                                              <option value="2">Nữ</option>
+                                              <option value="3">Khác</option>
+                                          </select>
+                                      </div>
+                                      <label class="col-sm-4 col-form-label">Quốc gia:</label>
+                                      <div class="col-sm-8">
+                                          <select class="form-select form-control" aria-label="Default select example">
+                                              <option selected>Việt Nam</option>
+                                              <option value="2">Laos</option>
+                                              <option value="3">Campodia</option>
+                                          </select>
+                                      </div>
+                                      <label class="col-sm-4 col-form-label">Tỉnh/ TP:</label>
+                                      <div class="col-sm-8">
+                                          <select class="form-select form-control" aria-label="Default select example">
+                                              <option selected>Hồ Chí Minh</option>
+                                              <option value="2">Đà Nẵng</option>
+                                              <option value="3">Hà Nội</option>
+                                          </select>
+                                      </div>
+                                      <label class="col-sm-4 col-form-label">Quận/ Huyện:</label>
+                                      <div class="col-sm-8">
+                                          <select class="form-select form-control" aria-label="Default select example">
+                                              <option selected>Ba Đình</option>
+                                              <option value="2">Long Biên</option>
+                                              <option value="3">Thanh Xuân</option>
+                                          </select>
+                                      </div>
+                                      <label class="col-sm-4 col-form-label">Hộ khẩu thường trú:</label>
+                                      <div class="col-sm-8">
+                                          <input class="form-control" id="inputhokhau">
+                                      </div>
+                                      <label class="col-sm-4 col-form-label">Chỗ ở hiện tại:</label>
+                                      <div class="col-sm-8">
+                                        <input class="form-control" id="inputchoohientai">
+                                      </div>
+                                      <label class="col-sm-4 col-form-label">Ngày kích ho:</label>
+                                      <div class="col-sm-8">
+                                        <input type="date" class="form-control" id="inputngaykichhoat">
+                                      </div>
+                                    </div>
+                                  
+                                </form>
+                          </div>
+
+                          <div class="col-2">
+                          </div>
+                          <div class="abcs">
+
+                          </div>
+
+                        </div>
+                        <div class="row justify-content-end ">
+                          <div class="doimatkhau">
+                            <button type="submit" id="doimatkhau">ĐỔI MẬT KHẨU</button>
+                          </div>
+                        </div>
+              </div>
+
+              
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2">
+            <div id="logo"><img src="./assets/img/logo.png"></div>
+          </div>
+          <div class="col-8 slogan">
+            <p>COPY RIGHT 2021 CRYSTAL BAY GROUP ALL RIGHT RESERVED </p>
+            <p><ins>POWERED BY CRYSTAL TECHNOLOGY</ins> <img src="./assets/img/cbtech.png" id="cbtech"></p>
+          </div>
+          <div class="col-2 icon">
+            <div class="row">
+              <div class="col-4">
+                <img class="fb" src="./assets/img/facebook.png">
+              </div>
+              <div class="col-4">
+                <img class="yt" src="./assets/img/youtube.png">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
